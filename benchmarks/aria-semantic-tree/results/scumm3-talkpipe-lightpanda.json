@@ -1,0 +1,60 @@
+{
+  "authorizedProductionExecution": false,
+  "classification": "local synthetic-lease Sandia TalkPipe read/transform demonstration",
+  "comparison": {
+    "classification": "WPT-derived CDP/MCP and experimental WebDriver AX observations; NOT official WPT",
+    "experimentalWebDriverAx": "4/4",
+    "mutatingCapabilities": false,
+    "officialWptBlocker": "POST /session/{id}/window/new unsupported",
+    "officialWptPasses": 0,
+    "post4036": {
+      "cdp": "4/4",
+      "mcp": "0/4"
+    },
+    "post4129": {
+      "cdp": "4/4",
+      "mcp": "4/4"
+    },
+    "sourceSha256": "ccb8b47e2e8ce79cf3713b61338a12f9f5e95c1c0318ae896f98713e517bef13"
+  },
+  "effects": [
+    "read",
+    "transform"
+  ],
+  "executionTrace": [
+    {
+      "capability": "lightpanda.evidence.read",
+      "effect": "read",
+      "stepId": "post4036-evidence"
+    },
+    {
+      "capability": "lightpanda.evidence.read",
+      "effect": "read",
+      "stepId": "post4129-evidence"
+    },
+    {
+      "capability": "lightpanda.evidence.read",
+      "effect": "read",
+      "stepId": "bridge-evidence"
+    },
+    {
+      "capability": "lightpanda.evidence.compare",
+      "effect": "transform",
+      "stepId": "verify-computed-ax"
+    }
+  ],
+  "inputBundleSha256": {
+    "bridge": "60e61ca6ebdcff1c79d0fe61ab864c1af85d67a60babc90eb4aaafa1300d1f60",
+    "post4036": "6454c42d450fba5853e4011f0a1e945dc0a2cd16edf01399cb4305d31707f542",
+    "post4129": "d6b3dafc2740cf62b4c63cf00f36c7edf7a29338945695fa0a932c071d125d59"
+  },
+  "mutatedBrowserOrRepositories": false,
+  "officialWptPasses": 0,
+  "realPipeApi": true,
+  "scumm3Commit": "e8372b9e3ddda69a5d689c34ef0c385059c04d9b",
+  "source": "existing synthetic Lightpanda WPT-derived receipts",
+  "stdio": {
+    "executionId": "tp-468debc6b4de2c5e3f4f0915abc1e8b9",
+    "status": "completed"
+  }
+}

@@ -60,3 +60,19 @@ Reproduce with the binary built at `d745d082` and the pinned local WPT source fi
 ```sh
 python3 bridge_probe.py --binary /path/to/lightpanda --label webdriver-ax-experimental
 ```
+
+## Scumm3 + TalkPipe evidence experiment
+
+A read-only [Scumm3/TalkPipe adapter](scumm3_lightpanda/README.md) now
+reconciles the pinned CDP, MCP, and experimental WebDriver AX evidence
+through **Scumm3's real Sandia TalkPipe Pipe API**. The four-step pipeline
+verifies record hashes, matching browser identities and WPT-derived
+expectations, then checks that the official runner still reports zero
+passes because `window/new` is unsupported.
+
+The [local execution receipt](results/scumm3-talkpipe-lightpanda.json)
+records the stage trace and the Scumm3 standard-input bridge completion.
+This used only a local synthetic lease and read/transform capabilities:
+**no approved Atlas/Shell admission, no browser or repository mutations,
+and no official WPT conformance claim.** Six adapter-specific policy
+tests and six unchanged Scumm3 bridge regressions passed locally.
