@@ -19,3 +19,7 @@ The direct `wptrunner` invocation is used to avoid changing system `/etc/hosts`;
 Observed: the product was discovered; wptrunner started Lightpanda WebDriver, created its session, loaded the testharness runner page, and began `wai-aria/idlharness.window.html`. Then `WebDriverTestharnessExecutor.close_old_windows` tried `POST /session/{sessionId}/window`, which Lightpanda returned as HTTP 404 `unknown command` (`test_end: ERROR`). That is a reproducible implementation blocker, **not a failed accessibility assertion** and **not a WPT pass**.
 
 Do not submit this plugin to WPT as complete until the WebDriver window-switch command and dependent runner setup succeed. Do not advertise platform-specific AAM testing until Lightpanda can expose actual AT-SPI (Linux) or equivalent operating-system accessibility objects.
+
+## Computed accessibility extension (experiment)
+
+The plugin now implements `LightpandaAccessibilityProtocolPart`, mapping results from `GET /session/{id}/element/{id}/accessibility` into the WPT `get_accessibility_properties_for_element` action. These values come from native CDP AX serialization scoped to the WebDriver session, not DOM attribute echoes. It works only on the experimental fork branch at commit `d745d082` or compatible builds. The official WPT testharness cannot reach this action until genuine test-window creation is supported; do not claim WPT pass or platform AAM conformance.

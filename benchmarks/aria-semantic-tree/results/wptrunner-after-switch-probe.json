@@ -1,0 +1,25 @@
+{
+  "test": "wai-aria/idlharness.window.html",
+  "branch": "feat/webdriver-switch-window-20261021",
+  "commit": "3bb524b5",
+  "binary_version": "1.1.0-dev.10924+9c97385c",
+  "old_blocker": "POST /session/{sessionId}/window -> 404 unknown command",
+  "fixed_step": "existing handle successfully switches current window; WPT proceeds to create_test_window",
+  "new_blocker": "POST /session/{sessionId}/window/new -> 404 unknown command",
+  "single_window_limit": true,
+  "official_wpt_passes": 0,
+  "events": [
+    {
+      "action": "test_start",
+      "test": "/wai-aria/idlharness.window.html",
+      "status": null,
+      "message": null
+    },
+    {
+      "action": "test_end",
+      "test": "/wai-aria/idlharness.window.html",
+      "status": "ERROR",
+      "message": "unknown command"
+    }
+  ]
+}

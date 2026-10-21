@@ -6,7 +6,7 @@ if [[ $# -lt 3 ]]; then
 fi
 WPT="$(realpath "$1")"
 BINARY="$(realpath "$2")"
-PYTHON="$(realpath "$3")"
+PYTHON="$3"  # Retain venv entrypoint: realpath would resolve to system Python.
 TEST="${4:-wai-aria/idlharness.window.html}"
 export PYTHONPATH="$WPT:$WPT/tools/wptserve:$WPT/tools/wptrunner:$WPT/tools/manifest:$WPT/tools/webdriver:$WPT/tools/third_party/h2/src:$WPT/tools/third_party/hpack/src:$WPT/tools/third_party/hyperframe/src:$WPT/tools/third_party/pywebsocket3"
 cd "$WPT"

@@ -1,0 +1,47 @@
+{
+  "label": "webdriver-ax-experimental",
+  "binary_sha256": "a9a97f19febb5bb90ee87c66aa36f08075a78bef21cbc3d87f280f64f86ce1a8",
+  "wpt_source_sha256": "ccb8b47e2e8ce79cf3713b61338a12f9f5e95c1c0318ae896f98713e517bef13",
+  "wpt_source_revision": "b4b303c8dca22989c43e2d76fce199c36d4b77a7",
+  "classification": "WPT-sourced checkbox expectations tested against computed CDP AX exposed via experimental same-session WebDriver extension. Not official WPT.",
+  "correct": 4,
+  "total": 4,
+  "invalid_element": {
+    "http_status": 404,
+    "error": "no such element"
+  },
+  "findings": [
+    {
+      "name": "checkbox with missing aria-checked",
+      "expected": "false",
+      "observed": "false",
+      "role": "checkbox",
+      "node_count": 1,
+      "matches": true
+    },
+    {
+      "name": "checkbox with aria-checked true",
+      "expected": "true",
+      "observed": "true",
+      "role": "checkbox",
+      "node_count": 1,
+      "matches": true
+    },
+    {
+      "name": "checkbox with aria-checked false",
+      "expected": "false",
+      "observed": "false",
+      "role": "checkbox",
+      "node_count": 1,
+      "matches": true
+    },
+    {
+      "name": "checkbox with aria-checked mixed",
+      "expected": "mixed",
+      "observed": "mixed",
+      "role": "checkbox",
+      "node_count": 1,
+      "matches": true
+    }
+  ]
+}

@@ -44,3 +44,19 @@ python3 model_pilot.py --binary /path/to/post4129/lightpanda --label post4129
 **Experimental upstream wptrunner product:** The [external Lightpanda product plugin](wpt-product/) registers Lightpanda without modifying upstream WPT. Lightpanda successfully returned WebDriver `/status` and `/session` responses; upstream `wptrunner` launched the browser and issued `test_start` for the ARIA IDL test. It then failed with `unknown command` on `POST /session/{sessionId}/window` (HTTP 404). See the [probe receipt](results/wptrunner-integration-probe.json). **No official WPT test passed through wptrunner.** The normal `./wpt run` frontend also enforces WPT host-file setup; the direct runner was used with local host overrides and without system host mutations.
 
 **Remaining integration work:** implement the WebDriver switch-window operation; wire WPT's accessibility-property testdriver action to real browser accessibility data; and expose operating-system accessibility APIs (e.g. AT-SPI on Linux) before enabling WPT `aamtest`. The plugin deliberately does not advertise `aamtest`. Do not count MCP/CDP state projections as official WPT conformance.
+
+## WebDriver window-switch follow-up
+
+The separate branch `feat/webdriver-switch-window-20261021` adds W3C `POST /session/{id}/window` for the existing browsing context and rejects unknown handles. With that binary the direct WPT runner advances beyond `close_old_windows`, but now fails at **`POST /session/{id}/window/new`**, since Lightpanda currently supports only one top-level browsing context. See [the after-switch receipt](results/wptrunner-after-switch-probe.json). Do not claim the runner has completed a test.
+
+## Experimental computed-AX WebDriver bridge
+
+In [fork branch `feat/wpt-accessibility-bridge-20261021`](https://github.com/mcc0nnell/browser/tree/feat/wpt-accessibility-bridge-20261021), commit `d745d082`, a **nonstandard** WebDriver endpoint, `GET /session/{id}/element/{id}/accessibility`, returns computed CDP AX nodes from the *same live WebDriver session* and validates WebDriver element references. The [external WPT browser plugin](wpt-product/) maps that output to the `get_accessibility_properties_for_element` action's role, label and checked fields. This is not an operating-system accessibility API.
+
+With [the bridge probe](bridge_probe.py), four pinned WPT checked-property expectations all matched the native computed AX values (absent→false, true, false, mixed); an invalid element returned HTTP 404 `no such element`. [Receipt](results/webdriver-ax-experimental-web-driver-ax-bridge.json). The plugin's mixed-state mapping was separately unit-checked. **This is WPT-sourced test data through an experimental extension, not an official WPT or `aamtest` result.** The official runner remains blocked at `POST /window/new` because Lightpanda does not yet support multiple top-level browsing contexts. The bridge is **not proposed for upstream merge** without maintainer input on vendor endpoint design.
+
+Reproduce with the binary built at `d745d082` and the pinned local WPT source fixture:
+
+```sh
+python3 bridge_probe.py --binary /path/to/lightpanda --label webdriver-ax-experimental
+```

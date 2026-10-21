@@ -4,7 +4,8 @@ import sys
 from wptrunner.browsers.base import WebDriverBrowser, get_timeout_multiplier, require_arg
 from wptrunner.executors import executor_kwargs as base_executor_kwargs
 from wptrunner.executors.base import PytestExecutor
-from wptrunner.executors.executorwebdriver import WebDriverTestharnessExecutor
+from wptrunner.executors.executorwebdriver import (
+    WebDriverTestharnessExecutor, WebDriverProtocol, WebDriverAccessibilityProtocolPart)
 from wptrunner.products import Product
 
 __wptrunner__ = {
@@ -12,7 +13,7 @@ __wptrunner__ = {
     "check_args": "check_args",
     "browser": "LightpandaBrowser",
     "executor": {
-        "testharness": "WebDriverTestharnessExecutor",
+        "testharness": "LightpandaTestharnessExecutor",
         "wdspec": "PytestExecutor",
     },
     "browser_kwargs": "browser_kwargs",
@@ -21,6 +22,37 @@ __wptrunner__ = {
     "env_options": "env_options",
     "timeout_multiplier": "get_timeout_multiplier",
 }
+class LightpandaAccessibilityProtocolPart(WebDriverAccessibilityProtocolPart):
+    """Computed AX state from Lightpanda's same-session vendor extension.
+
+    This is not a WebDriver-standard endpoint or an OS accessibility API.
+    """
+    def get_accessibility_properties_for_element(self, element):
+        result = self.webdriver.send_session_command(
+            "GET", f"element/{element.id}/accessibility")
+        nodes = result.get("nodes", [])
+        if not nodes:
+            return {}
+        node = nodes[0]
+        mapped = {"accessibilityId": node.get("nodeId"),
+                  "children": node.get("childIds", [])}
+        for source, target in (("role", "role"), ("name", "label"),
+                               ("description", "description"), ("value", "value")):
+            if isinstance(node.get(source), dict):
+                mapped[target] = node[source].get("value")
+        for prop in node.get("properties", []):
+            if prop.get("name") in {"checked", "pressed", "level", "multiline",
+                                    "orientation", "required", "roledescription", "selected"}:
+                mapped[prop["name"]] = prop.get("value", {}).get("value")
+        return mapped
+
+class LightpandaProtocol(WebDriverProtocol):
+    implements = [LightpandaAccessibilityProtocolPart] + [
+        p for p in WebDriverProtocol.implements if p.name != "accessibility"]
+
+class LightpandaTestharnessExecutor(WebDriverTestharnessExecutor):
+    protocol_cls = LightpandaProtocol
+
 def check_args(**kwargs):
     require_arg(kwargs, "binary")
 def browser_kwargs(logger, test_type, run_info_data, config, **kwargs):
