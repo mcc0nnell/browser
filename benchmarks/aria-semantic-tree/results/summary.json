@@ -18,7 +18,10 @@
       "workflow_final_correct": 20,
       "workflow_clicks": 0,
       "workflow_tree_bytes": 1582,
-      "workflow_median_ms": 99.135
+      "workflow_median_ms": 99.135,
+      "wpt_cdp_projected_correct": 0,
+      "wpt_mcp_projected_correct": 0,
+      "wpt_projected_total": 4
     },
     {
       "stage": "Merged #4036",
@@ -37,7 +40,10 @@
       "workflow_final_correct": 20,
       "workflow_clicks": 0,
       "workflow_tree_bytes": 1582,
-      "workflow_median_ms": 119.329
+      "workflow_median_ms": 119.329,
+      "wpt_cdp_projected_correct": 4,
+      "wpt_mcp_projected_correct": 0,
+      "wpt_projected_total": 4
     },
     {
       "stage": "PR #4129 head",
@@ -56,7 +62,10 @@
       "workflow_final_correct": 40,
       "workflow_clicks": 20,
       "workflow_tree_bytes": 2027,
-      "workflow_median_ms": 100.069
+      "workflow_median_ms": 100.069,
+      "wpt_cdp_projected_correct": 4,
+      "wpt_mcp_projected_correct": 4,
+      "wpt_projected_total": 4
     }
   ]
 }

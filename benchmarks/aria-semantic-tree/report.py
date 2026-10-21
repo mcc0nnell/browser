@@ -12,6 +12,10 @@ rows=[]
 for label,sha,stage,prefix in VERSIONS:
     observation=json.loads((BASE/"results"/(prefix+".json")).read_text())
     tasks=json.loads((BASE/"results"/(prefix+"-workflow.json")).read_text())
+    mcp_wpt=json.loads((BASE/"results"/(prefix+"-wpt.json")).read_text())
+    cdp_wpt=json.loads((BASE/"results"/(prefix+"-cdp-wpt.json")).read_text())
+    if mcp_wpt["binary_sha256"] != cdp_wpt["binarySha256"] or mcp_wpt["source_sha256"] != cdp_wpt["sourceSha256"]:
+        raise SystemExit("MISMATCH: WPT source/binary differs across MCP and CDP")
     if observation["binary_sha256"]!=tasks["binary_sha256"]:
         raise SystemExit("MISMATCH: binaries differ for "+label)
     if observation["fixture_sha256"] != json.loads((BASE/"results"/"post4129.json").read_text())["fixture_sha256"]:
@@ -35,7 +39,10 @@ for label,sha,stage,prefix in VERSIONS:
         "workflow_final_correct":int(tasks["median_final_correct"]),
         "workflow_clicks":int(sorted(r["clicks"] for r in runs)[len(runs)//2]),
         "workflow_tree_bytes":tasks["median_tree_bytes"],
-        "workflow_median_ms":tasks["median_tree_ms"]
+        "workflow_median_ms":tasks["median_tree_ms"],
+        "wpt_cdp_projected_correct":cdp_wpt["correct"],
+        "wpt_mcp_projected_correct":mcp_wpt["correct"],
+        "wpt_projected_total":cdp_wpt["total"]
     }
     rows.append(row)
 with (BASE/"results"/"summary.csv").open("w",newline="") as handle:

@@ -1,0 +1,38 @@
+{
+  "label": "post4036",
+  "measurement": "CDP Accessibility.getFullAXTree WPT source-derived 4-case projection; not official WPT",
+  "binarySha256": "3a50a6024af6c4b6a1b1c5b55c734047adaf2adf3f8fd83a8d3b3369540eadf2",
+  "sourceSha256": "ccb8b47e2e8ce79cf3713b61338a12f9f5e95c1c0318ae896f98713e517bef13",
+  "correct": 4,
+  "total": 4,
+  "findings": [
+    {
+      "name": "checkbox with missing aria-checked",
+      "expected": "false",
+      "observed": "false",
+      "matchedNodes": 1,
+      "match": true
+    },
+    {
+      "name": "checkbox with aria-checked true",
+      "expected": "true",
+      "observed": "true",
+      "matchedNodes": 1,
+      "match": true
+    },
+    {
+      "name": "checkbox with aria-checked false",
+      "expected": "false",
+      "observed": "false",
+      "matchedNodes": 1,
+      "match": true
+    },
+    {
+      "name": "checkbox with aria-checked mixed",
+      "expected": "mixed",
+      "observed": "mixed",
+      "matchedNodes": 1,
+      "match": true
+    }
+  ]
+}

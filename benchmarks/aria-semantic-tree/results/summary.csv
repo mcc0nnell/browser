@@ -1,4 +1,4 @@
-stage,commit,version,sha256,regression_visible,regression_total,regression_wrong,regression_unknown,negative_controls_clear,regression_tree_bytes,regression_median_ms,workflow_known,workflow_total,workflow_final_correct,workflow_clicks,workflow_tree_bytes,workflow_median_ms
-Oct 18 older build,0bef9e72,1.1.0-dev.10748+0bef9e72,ca0f81ef297935bf281e99d92849d5bdce3661563fa6e0cf6e954b24e41ff359,0,19,0,19,3,920,7.393,0,40,20,0,1582,99.135
-Merged #4036,463360ad,1.1.0-dev.10918+463360ad,3a50a6024af6c4b6a1b1c5b55c734047adaf2adf3f8fd83a8d3b3369540eadf2,0,19,0,19,3,920,10.016,0,40,20,0,1582,119.329
-PR #4129 head,725ff748,1.1.0-dev.10925+725ff748,9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c,19,19,0,0,3,1143,7.75,40,40,40,20,2027,100.069
+stage,commit,version,sha256,regression_visible,regression_total,regression_wrong,regression_unknown,negative_controls_clear,regression_tree_bytes,regression_median_ms,workflow_known,workflow_total,workflow_final_correct,workflow_clicks,workflow_tree_bytes,workflow_median_ms,wpt_cdp_projected_correct,wpt_mcp_projected_correct,wpt_projected_total
+Oct 18 older build,0bef9e72,1.1.0-dev.10748+0bef9e72,ca0f81ef297935bf281e99d92849d5bdce3661563fa6e0cf6e954b24e41ff359,0,19,0,19,3,920,7.393,0,40,20,0,1582,99.135,0,0,4
+Merged #4036,463360ad,1.1.0-dev.10918+463360ad,3a50a6024af6c4b6a1b1c5b55c734047adaf2adf3f8fd83a8d3b3369540eadf2,0,19,0,19,3,920,10.016,0,40,20,0,1582,119.329,4,0,4
+PR #4129 head,725ff748,1.1.0-dev.10925+725ff748,9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c,19,19,0,0,3,1143,7.75,40,40,40,20,2027,100.069,4,4,4
