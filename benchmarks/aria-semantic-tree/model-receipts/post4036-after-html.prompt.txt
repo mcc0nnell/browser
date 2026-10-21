@@ -1,0 +1,48 @@
+You are an AI agent controlling a headless browser with semantic accessibility tools.
+GOAL: All 12 task-listed controls should end ENABLED (checked=true, or expanded=true for buttons).
+You have one live MCP semantic tree read. Only use the information below. No external tools.
+Each task has a selector ID, accessible name, and ARIA role; the ID itself contains no state.
+If ANY required state is unknown or missing from the semantic tree, set inspect_html=true
+and click_ids=[]; this requests one additional HTML inspection. Never guess.
+If all required states are present, set inspect_html=false and include only IDs currently
+false/unchecked/collapsed in click_ids. If RAW HTML is provided, derive states from the
+matching element's aria-checked/aria-expanded value and set inspect_html=false.
+Ignore elements not in the task list. Respond with exactly a valid JSON object with
+two keys: {"inspect_html":false,"click_ids":["case-01"]}. No markdown, no prose.
+TASKS:
+[{"id":"case-00","name":"Orion option","role":"button"},{"id":"case-01","name":"Cedar option","role":"checkbox"},{"id":"case-02","name":"Comet option","role":"switch"},{"id":"case-03","name":"Harbor option","role":"menuitemcheckbox"},{"id":"case-04","name":"Quartz option","role":"button"},{"id":"case-05","name":"Willow option","role":"checkbox"},{"id":"case-06","name":"Falcon option","role":"switch"},{"id":"case-07","name":"Meadow option","role":"menuitemcheckbox"},{"id":"case-08","name":"Ember option","role":"button"},{"id":"case-09","name":"Delta option","role":"checkbox"},{"id":"case-10","name":"Cobalt option","role":"switch"},{"id":"case-11","name":"Nimbus option","role":"menuitemcheckbox"}]
+MCP TREE:
+1 RootWebArea 'Held-out accessibility toggles'
+ 4 [i] button 'Orion option'
+ 5 [i] checkbox 'Cedar option'
+ 7 [i] switch 'Comet option'
+ 9 [i] menuitemcheckbox 'Harbor option'
+ 11 [i] button 'Quartz option'
+ 12 [i] checkbox 'Willow option'
+ 14 [i] switch 'Falcon option'
+ 16 [i] menuitemcheckbox 'Meadow option'
+ 18 [i] button 'Ember option'
+ 19 [i] checkbox 'Delta option'
+ 21 [i] switch 'Cobalt option'
+ 23 [i] menuitemcheckbox 'Nimbus option'
+ 25 'Decorative Orion'
+
+The browser has now returned RAW HTML for the same page:
+<!DOCTYPE html>
+<html lang="en"><head><title>Held-out accessibility toggles</title></head><body>
+<script>function flip(el){ const k=el.hasAttribute('aria-expanded')?'aria-expanded':'aria-checked'; el.setAttribute(k, String(el.getAttribute(k).toLowerCase()!=='true')); }</script>
+<button id="case-00" role="button" tabindex="0" aria-label="Orion option" aria-expanded="FALSE" onclick="flip(this)">Orion option</button>
+<div id="case-01" role="checkbox" tabindex="0" aria-label="Cedar option" aria-checked="true" onclick="flip(this)">Cedar option</div>
+<div id="case-02" role="switch" tabindex="0" aria-label="Comet option" aria-checked="false" onclick="flip(this)">Comet option</div>
+<div id="case-03" role="menuitemcheckbox" tabindex="0" aria-label="Harbor option" aria-checked="true" onclick="flip(this)">Harbor option</div>
+<button id="case-04" role="button" tabindex="0" aria-label="Quartz option" aria-expanded="TRUE" onclick="flip(this)">Quartz option</button>
+<div id="case-05" role="checkbox" tabindex="0" aria-label="Willow option" aria-checked="false" onclick="flip(this)">Willow option</div>
+<div id="case-06" role="switch" tabindex="0" aria-label="Falcon option" aria-checked="true" onclick="flip(this)">Falcon option</div>
+<div id="case-07" role="menuitemcheckbox" tabindex="0" aria-label="Meadow option" aria-checked="false" onclick="flip(this)">Meadow option</div>
+<button id="case-08" role="button" tabindex="0" aria-label="Ember option" aria-expanded="TRUE" onclick="flip(this)">Ember option</button>
+<div id="case-09" role="checkbox" tabindex="0" aria-label="Delta option" aria-checked="false" onclick="flip(this)">Delta option</div>
+<div id="case-10" role="switch" tabindex="0" aria-label="Cobalt option" aria-checked="true" onclick="flip(this)">Cobalt option</div>
+<div id="case-11" role="menuitemcheckbox" tabindex="0" aria-label="Nimbus option" aria-checked="false" onclick="flip(this)">Nimbus option</div>
+<div aria-label="Decorative Orion" role="generic" aria-expanded="true"></div>
+
+</body></html>

@@ -1,0 +1,46 @@
+{
+  "label": "post4129",
+  "binary_sha256": "9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c",
+  "fixture_sha256": "e3fb17f5640c8d807f07993e769733e4f411b8f7d5170eb3bc448a0a5013c2e2",
+  "tasks": 12,
+  "correct_final": 12,
+  "initial_true": 6,
+  "mcp_tool_calls": 8,
+  "click_count": 6,
+  "model_calls": 1,
+  "model_time_s": 10.69,
+  "model_tokens_reported": 2513,
+  "model_decisions": [
+    {
+      "phase": "initial",
+      "action": {
+        "inspect_html": false,
+        "click_ids": [
+          "case-00",
+          "case-02",
+          "case-05",
+          "case-07",
+          "case-09",
+          "case-11"
+        ]
+      },
+      "elapsed_s": 10.69,
+      "tokens_reported": 2513
+    }
+  ],
+  "actual_final": {
+    "case-00": "true",
+    "case-01": "true",
+    "case-02": "true",
+    "case-03": "true",
+    "case-04": "true",
+    "case-05": "true",
+    "case-06": "true",
+    "case-07": "true",
+    "case-08": "true",
+    "case-09": "true",
+    "case-10": "true",
+    "case-11": "true"
+  },
+  "measurement": "1 synthetic held-out fixture, model decisions via Codex exec; exploratory only"
+}

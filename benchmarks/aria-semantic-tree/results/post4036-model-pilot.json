@@ -1,0 +1,55 @@
+{
+  "label": "post4036",
+  "binary_sha256": "3a50a6024af6c4b6a1b1c5b55c734047adaf2adf3f8fd83a8d3b3369540eadf2",
+  "fixture_sha256": "e3fb17f5640c8d807f07993e769733e4f411b8f7d5170eb3bc448a0a5013c2e2",
+  "tasks": 12,
+  "correct_final": 12,
+  "initial_true": 6,
+  "mcp_tool_calls": 9,
+  "click_count": 6,
+  "model_calls": 2,
+  "model_time_s": 11.27,
+  "model_tokens_reported": 5502,
+  "model_decisions": [
+    {
+      "phase": "initial",
+      "action": {
+        "inspect_html": true,
+        "click_ids": []
+      },
+      "elapsed_s": 4.28,
+      "tokens_reported": 2453
+    },
+    {
+      "phase": "after-html",
+      "action": {
+        "inspect_html": false,
+        "click_ids": [
+          "case-00",
+          "case-02",
+          "case-05",
+          "case-07",
+          "case-09",
+          "case-11"
+        ]
+      },
+      "elapsed_s": 6.99,
+      "tokens_reported": 3049
+    }
+  ],
+  "actual_final": {
+    "case-00": "true",
+    "case-01": "true",
+    "case-02": "true",
+    "case-03": "true",
+    "case-04": "true",
+    "case-05": "true",
+    "case-06": "true",
+    "case-07": "true",
+    "case-08": "true",
+    "case-09": "true",
+    "case-10": "true",
+    "case-11": "true"
+  },
+  "measurement": "1 synthetic held-out fixture, model decisions via Codex exec; exploratory only"
+}

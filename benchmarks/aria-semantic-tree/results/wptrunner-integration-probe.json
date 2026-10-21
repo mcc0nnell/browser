@@ -1,0 +1,23 @@
+{
+  "classification": "EXPERIMENTAL official wptrunner process, not a passing WPT conformance result",
+  "wpt_revision": "6f22f9eab8830478cc0cc9c67ad9004a044c5969",
+  "product": "lightpanda via external package entry point",
+  "browser_binary_sha256": "9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c",
+  "webdriver_status_http": 200,
+  "webdriver_session_create_http": 200,
+  "selected_tests_started": [
+    "/wai-aria/idlharness.window.html"
+  ],
+  "selected_tests_ended": [
+    {
+      "test": "/wai-aria/idlharness.window.html",
+      "status": "ERROR",
+      "message_first_line": "unknown command"
+    }
+  ],
+  "first_missing_command": "POST /session/{sessionId}/window => HTTP 404 unknown command",
+  "path": "wptrunner.executors.executorwebdriver.close_old_windows -> webdriver.window_handle setter",
+  "upstream_wpt_frontend_blocker": "./wpt run requires configured WPT hosts; direct wptrunner used with localhost browser host",
+  "official_wpt_pass_claim": false,
+  "platform_aamtest_supported": false
+}

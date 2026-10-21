@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightpanda-wptrunner-product"
+version = "0.1.0"
+description = "Experimental external wptrunner browser product for Lightpanda WebDriver"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+py-modules = ["lightpanda_wptrunner"]
+
+[project.entry-points."wptrunner.products"]
+lightpanda = "lightpanda_wptrunner:product"

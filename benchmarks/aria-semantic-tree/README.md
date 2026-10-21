@@ -27,3 +27,20 @@ python3 report.py
 Review `results/summary.csv`, `results/summary.json` and individual receipt JSON for exact hashes, tree strings, state decisions, click counts and timings. Binaries are not committed. The October 18 snapshot includes unrelated upstream changes, but exact #4036 controls that confound; its CDP changes did not directly add MCP state exposure. Timings are low-sample diagnostics, not a performance claim. **Known discrepancy:** MCP `tree` can still include inert controls ignored by CDP. Next work: model-driven held-out tasks with normal fallback tools, cost accounting, and official WPT where a compliant driver exists.
 
 No WPT PR was submitted. Review the WPT [LLM contribution policy](https://web-platform-tests.org/writing-tests/ai-policy.html) before proposing any upstream WPT additions.
+
+## WPT integration and model-driven pilot — October 21, 2026
+
+The separate [model-driven pilot](model_pilot.py) used the authenticated Codex CLI (`gpt-6-astra` as reported by the tool) in read-only, ephemeral mode. It tested a NEW, deterministic 12-control held-out fixture with real MCP tree, optional HTML fallback, actual click calls and final DOM scoring. Both versions achieved **12/12**. Exact merged #4036 required **two** model decisions, 9 MCP calls and HTML fallback; benchmarked #4129 commit `725ff748` required **one** model decision, 8 MCP calls and no fallback. Reported tokens were 5,502 versus 2,513. A single small synthetic fixture is NOT a statistical agent-success benchmark or a measured cost improvement.
+
+Reproduce with authenticated Codex CLI and verified binaries:
+
+```sh
+python3 model_pilot.py --binary /path/to/post4036/lightpanda --label post4036
+python3 model_pilot.py --binary /path/to/post4129/lightpanda --label post4129
+```
+
+**Genuine WPT-authored pages:** The [WPT page pilot](wpt_page_pilot.py) used upstream `./wpt serve` with an isolated loopback config and temporarily swapped in Lightpanda's [custom WPT reporter](lightpanda-testharnessreport.js). The original reporter was restored after execution. WPT revision `6f22f9eab8830478cc0cc9c67ad9004a044c5969` reported **101 Pass / 20 Fail** for `wai-aria/idlharness.window.html` (notably missing `ariaNotify` and ARIA element-reference APIs). The checked-state WPT page reported four failures because the `test_driver.get_accessibility_properties_for_element` hook was unavailable. Both Lightpanda builds matched these outcomes. These are actual WPT pages and testharness.js, but **not official wptrunner results**.
+
+**Experimental upstream wptrunner product:** The [external Lightpanda product plugin](wpt-product/) registers Lightpanda without modifying upstream WPT. Lightpanda successfully returned WebDriver `/status` and `/session` responses; upstream `wptrunner` launched the browser and issued `test_start` for the ARIA IDL test. It then failed with `unknown command` on `POST /session/{sessionId}/window` (HTTP 404). See the [probe receipt](results/wptrunner-integration-probe.json). **No official WPT test passed through wptrunner.** The normal `./wpt run` frontend also enforces WPT host-file setup; the direct runner was used with local host overrides and without system host mutations.
+
+**Remaining integration work:** implement the WebDriver switch-window operation; wire WPT's accessibility-property testdriver action to real browser accessibility data; and expose operating-system accessibility APIs (e.g. AT-SPI on Linux) before enabling WPT `aamtest`. The plugin deliberately does not advertise `aamtest`. Do not count MCP/CDP state projections as official WPT conformance.
