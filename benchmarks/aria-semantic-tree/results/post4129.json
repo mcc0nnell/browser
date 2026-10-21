@@ -1,0 +1,847 @@
+{
+  "binary": "bin/post4129",
+  "binary_sha256": "9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c",
+  "binary_bytes": 488554573,
+  "samples": 5,
+  "correct": 19,
+  "wrong": 0,
+  "unknown": 0,
+  "total": 19,
+  "negative_controls": [
+    {
+      "name": "Generic expanded",
+      "present": true,
+      "spurious_state": false
+    },
+    {
+      "name": "Invalid details",
+      "present": true,
+      "spurious_state": false
+    },
+    {
+      "name": "Invalid state",
+      "present": true,
+      "spurious_state": false
+    }
+  ],
+  "median_tree_ms": 7.75,
+  "min_tree_ms": 7.463,
+  "max_tree_ms": 9.49,
+  "tree_bytes": 1143,
+  "observations": [
+    {
+      "name": "Expanded details",
+      "expected": "expanded",
+      "observed": "expanded",
+      "outcome": "correct"
+    },
+    {
+      "name": "Collapsed details",
+      "expected": "collapsed",
+      "observed": "collapsed",
+      "outcome": "correct"
+    },
+    {
+      "name": "Uppercase expanded",
+      "expected": "expanded",
+      "observed": "expanded",
+      "outcome": "correct"
+    },
+    {
+      "name": "Uppercase collapsed",
+      "expected": "collapsed",
+      "observed": "collapsed",
+      "outcome": "correct"
+    },
+    {
+      "name": "Mixed terms",
+      "expected": "mixed",
+      "observed": "mixed",
+      "outcome": "correct"
+    },
+    {
+      "name": "Checked terms",
+      "expected": "checked",
+      "observed": "checked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Unfocusable terms",
+      "expected": "unchecked",
+      "observed": "unchecked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Uppercase mixed",
+      "expected": "mixed",
+      "observed": "mixed",
+      "outcome": "correct"
+    },
+    {
+      "name": "Absent checked",
+      "expected": "unchecked",
+      "observed": "unchecked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Switch checked",
+      "expected": "checked",
+      "observed": "checked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Switch mixed",
+      "expected": "unchecked",
+      "observed": "unchecked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Menu checkbox checked",
+      "expected": "checked",
+      "observed": "checked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Menu checkbox mixed",
+      "expected": "mixed",
+      "observed": "mixed",
+      "outcome": "correct"
+    },
+    {
+      "name": "Radio unchecked",
+      "expected": "unchecked",
+      "observed": "unchecked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Radio absent",
+      "expected": "unchecked",
+      "observed": "unchecked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Menu radio checked",
+      "expected": "checked",
+      "observed": "checked",
+      "outcome": "correct"
+    },
+    {
+      "name": "Custom anchor",
+      "expected": "expanded",
+      "observed": "expanded",
+      "outcome": "correct"
+    },
+    {
+      "name": "Custom image",
+      "expected": "expanded",
+      "observed": "expanded",
+      "outcome": "correct"
+    },
+    {
+      "name": "Expanded switch",
+      "expected": "expanded",
+      "observed": "expanded",
+      "outcome": "correct"
+    }
+  ],
+  "raw_samples": [
+    {
+      "sample": 1,
+      "tree_ms": 9.49,
+      "tree_bytes": 1143,
+      "tree": "1 RootWebArea 'AX ARIA states'\n 4 [i] button 'Expanded details' [expanded]\n 5 [i] button 'Collapsed details' [collapsed]\n 6 [i] button 'Invalid details'\n 7 [i] checkbox 'Mixed terms' [mixed]\n 9 [i] checkbox 'Checked terms' [checked]\n 11 [i] checkbox 'Unfocusable terms' [unchecked]\n 13 [i] checkbox 'Invalid state'\n 15 [i] checkbox 'Native terms' value='on' [checked]\n 16 [i] checkbox 'Inert terms' [mixed]\n 18 [i] button 'Uppercase expanded' [expanded]\n 19 [i] button 'Uppercase collapsed' [collapsed]\n 20 [i] 'Generic expanded'\n 22 [i] checkbox 'Uppercase mixed' [mixed]\n  23 'Mixed uppercase'\n 24 [i] checkbox 'Absent checked' [unchecked]\n 26 [i] switch 'Switch checked' [checked]\n 28 [i] menuitemcheckbox 'Menu checkbox checked' [checked]\n 30 [i] radio 'Radio unchecked' [unchecked]\n 32 [i] menuitemradio 'Menu radio checked' [checked]\n 34 [i] button 'Custom anchor' [expanded]\n 35 [i] button 'Custom image' [expanded]\n 36 [i] radio 'Radio absent' [unchecked]\n 38 [i] switch 'Switch mixed' [unchecked]\n 40 [i] menuitemcheckbox 'Menu checkbox mixed' [mixed]\n 42 [i] switch 'Expanded switch' [expanded] [unchecked]\n 44 [i] link 'Plain link'\n",
+      "observations": [
+        {
+          "name": "Expanded details",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Collapsed details",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase expanded",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase collapsed",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Mixed terms",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Checked terms",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Unfocusable terms",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Absent checked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch mixed",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio unchecked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio absent",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu radio checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom anchor",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom image",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Expanded switch",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Generic expanded",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid details",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid state",
+          "present": true,
+          "spurious_state": false
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "tree_ms": 7.781,
+      "tree_bytes": 1143,
+      "tree": "1 RootWebArea 'AX ARIA states'\n 4 [i] button 'Expanded details' [expanded]\n 5 [i] button 'Collapsed details' [collapsed]\n 6 [i] button 'Invalid details'\n 7 [i] checkbox 'Mixed terms' [mixed]\n 9 [i] checkbox 'Checked terms' [checked]\n 11 [i] checkbox 'Unfocusable terms' [unchecked]\n 13 [i] checkbox 'Invalid state'\n 15 [i] checkbox 'Native terms' value='on' [checked]\n 16 [i] checkbox 'Inert terms' [mixed]\n 18 [i] button 'Uppercase expanded' [expanded]\n 19 [i] button 'Uppercase collapsed' [collapsed]\n 20 [i] 'Generic expanded'\n 22 [i] checkbox 'Uppercase mixed' [mixed]\n  23 'Mixed uppercase'\n 24 [i] checkbox 'Absent checked' [unchecked]\n 26 [i] switch 'Switch checked' [checked]\n 28 [i] menuitemcheckbox 'Menu checkbox checked' [checked]\n 30 [i] radio 'Radio unchecked' [unchecked]\n 32 [i] menuitemradio 'Menu radio checked' [checked]\n 34 [i] button 'Custom anchor' [expanded]\n 35 [i] button 'Custom image' [expanded]\n 36 [i] radio 'Radio absent' [unchecked]\n 38 [i] switch 'Switch mixed' [unchecked]\n 40 [i] menuitemcheckbox 'Menu checkbox mixed' [mixed]\n 42 [i] switch 'Expanded switch' [expanded] [unchecked]\n 44 [i] link 'Plain link'\n",
+      "observations": [
+        {
+          "name": "Expanded details",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Collapsed details",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase expanded",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase collapsed",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Mixed terms",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Checked terms",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Unfocusable terms",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Absent checked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch mixed",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio unchecked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio absent",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu radio checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom anchor",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom image",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Expanded switch",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Generic expanded",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid details",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid state",
+          "present": true,
+          "spurious_state": false
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "tree_ms": 7.463,
+      "tree_bytes": 1143,
+      "tree": "1 RootWebArea 'AX ARIA states'\n 4 [i] button 'Expanded details' [expanded]\n 5 [i] button 'Collapsed details' [collapsed]\n 6 [i] button 'Invalid details'\n 7 [i] checkbox 'Mixed terms' [mixed]\n 9 [i] checkbox 'Checked terms' [checked]\n 11 [i] checkbox 'Unfocusable terms' [unchecked]\n 13 [i] checkbox 'Invalid state'\n 15 [i] checkbox 'Native terms' value='on' [checked]\n 16 [i] checkbox 'Inert terms' [mixed]\n 18 [i] button 'Uppercase expanded' [expanded]\n 19 [i] button 'Uppercase collapsed' [collapsed]\n 20 [i] 'Generic expanded'\n 22 [i] checkbox 'Uppercase mixed' [mixed]\n  23 'Mixed uppercase'\n 24 [i] checkbox 'Absent checked' [unchecked]\n 26 [i] switch 'Switch checked' [checked]\n 28 [i] menuitemcheckbox 'Menu checkbox checked' [checked]\n 30 [i] radio 'Radio unchecked' [unchecked]\n 32 [i] menuitemradio 'Menu radio checked' [checked]\n 34 [i] button 'Custom anchor' [expanded]\n 35 [i] button 'Custom image' [expanded]\n 36 [i] radio 'Radio absent' [unchecked]\n 38 [i] switch 'Switch mixed' [unchecked]\n 40 [i] menuitemcheckbox 'Menu checkbox mixed' [mixed]\n 42 [i] switch 'Expanded switch' [expanded] [unchecked]\n 44 [i] link 'Plain link'\n",
+      "observations": [
+        {
+          "name": "Expanded details",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Collapsed details",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase expanded",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase collapsed",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Mixed terms",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Checked terms",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Unfocusable terms",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Absent checked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch mixed",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio unchecked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio absent",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu radio checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom anchor",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom image",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Expanded switch",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Generic expanded",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid details",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid state",
+          "present": true,
+          "spurious_state": false
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "tree_ms": 7.75,
+      "tree_bytes": 1143,
+      "tree": "1 RootWebArea 'AX ARIA states'\n 4 [i] button 'Expanded details' [expanded]\n 5 [i] button 'Collapsed details' [collapsed]\n 6 [i] button 'Invalid details'\n 7 [i] checkbox 'Mixed terms' [mixed]\n 9 [i] checkbox 'Checked terms' [checked]\n 11 [i] checkbox 'Unfocusable terms' [unchecked]\n 13 [i] checkbox 'Invalid state'\n 15 [i] checkbox 'Native terms' value='on' [checked]\n 16 [i] checkbox 'Inert terms' [mixed]\n 18 [i] button 'Uppercase expanded' [expanded]\n 19 [i] button 'Uppercase collapsed' [collapsed]\n 20 [i] 'Generic expanded'\n 22 [i] checkbox 'Uppercase mixed' [mixed]\n  23 'Mixed uppercase'\n 24 [i] checkbox 'Absent checked' [unchecked]\n 26 [i] switch 'Switch checked' [checked]\n 28 [i] menuitemcheckbox 'Menu checkbox checked' [checked]\n 30 [i] radio 'Radio unchecked' [unchecked]\n 32 [i] menuitemradio 'Menu radio checked' [checked]\n 34 [i] button 'Custom anchor' [expanded]\n 35 [i] button 'Custom image' [expanded]\n 36 [i] radio 'Radio absent' [unchecked]\n 38 [i] switch 'Switch mixed' [unchecked]\n 40 [i] menuitemcheckbox 'Menu checkbox mixed' [mixed]\n 42 [i] switch 'Expanded switch' [expanded] [unchecked]\n 44 [i] link 'Plain link'\n",
+      "observations": [
+        {
+          "name": "Expanded details",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Collapsed details",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase expanded",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase collapsed",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Mixed terms",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Checked terms",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Unfocusable terms",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Absent checked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch mixed",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio unchecked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio absent",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu radio checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom anchor",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom image",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Expanded switch",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Generic expanded",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid details",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid state",
+          "present": true,
+          "spurious_state": false
+        }
+      ]
+    },
+    {
+      "sample": 5,
+      "tree_ms": 7.47,
+      "tree_bytes": 1143,
+      "tree": "1 RootWebArea 'AX ARIA states'\n 4 [i] button 'Expanded details' [expanded]\n 5 [i] button 'Collapsed details' [collapsed]\n 6 [i] button 'Invalid details'\n 7 [i] checkbox 'Mixed terms' [mixed]\n 9 [i] checkbox 'Checked terms' [checked]\n 11 [i] checkbox 'Unfocusable terms' [unchecked]\n 13 [i] checkbox 'Invalid state'\n 15 [i] checkbox 'Native terms' value='on' [checked]\n 16 [i] checkbox 'Inert terms' [mixed]\n 18 [i] button 'Uppercase expanded' [expanded]\n 19 [i] button 'Uppercase collapsed' [collapsed]\n 20 [i] 'Generic expanded'\n 22 [i] checkbox 'Uppercase mixed' [mixed]\n  23 'Mixed uppercase'\n 24 [i] checkbox 'Absent checked' [unchecked]\n 26 [i] switch 'Switch checked' [checked]\n 28 [i] menuitemcheckbox 'Menu checkbox checked' [checked]\n 30 [i] radio 'Radio unchecked' [unchecked]\n 32 [i] menuitemradio 'Menu radio checked' [checked]\n 34 [i] button 'Custom anchor' [expanded]\n 35 [i] button 'Custom image' [expanded]\n 36 [i] radio 'Radio absent' [unchecked]\n 38 [i] switch 'Switch mixed' [unchecked]\n 40 [i] menuitemcheckbox 'Menu checkbox mixed' [mixed]\n 42 [i] switch 'Expanded switch' [expanded] [unchecked]\n 44 [i] link 'Plain link'\n",
+      "observations": [
+        {
+          "name": "Expanded details",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Collapsed details",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase expanded",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase collapsed",
+          "expected": "collapsed",
+          "observed": "collapsed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Mixed terms",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Checked terms",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Unfocusable terms",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Uppercase mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Absent checked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Switch mixed",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu checkbox mixed",
+          "expected": "mixed",
+          "observed": "mixed",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio unchecked",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Radio absent",
+          "expected": "unchecked",
+          "observed": "unchecked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Menu radio checked",
+          "expected": "checked",
+          "observed": "checked",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom anchor",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Custom image",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        },
+        {
+          "name": "Expanded switch",
+          "expected": "expanded",
+          "observed": "expanded",
+          "outcome": "correct"
+        }
+      ],
+      "controls": [
+        {
+          "name": "Generic expanded",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid details",
+          "present": true,
+          "spurious_state": false
+        },
+        {
+          "name": "Invalid state",
+          "present": true,
+          "spurious_state": false
+        }
+      ]
+    }
+  ],
+  "label": "post4129",
+  "fixture_sha256": "f39e7cb0f9d2f8f39096cdd1dad54376afbdc268712afa5ecfc0cec986fabfea",
+  "measurement": "MCP tree one-shot state visibility; no LLM and no agent action"
+}

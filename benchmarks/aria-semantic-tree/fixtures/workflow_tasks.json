@@ -1,0 +1,362 @@
+[
+  {
+    "id": "accordion-00",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": true,
+    "target": true,
+    "name": "ACCORDION TASK 00"
+  },
+  {
+    "id": "accordion-01",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": false,
+    "target": true,
+    "name": "ACCORDION TASK 01"
+  },
+  {
+    "id": "accordion-02",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": true,
+    "target": true,
+    "name": "ACCORDION TASK 02"
+  },
+  {
+    "id": "accordion-03",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": false,
+    "target": true,
+    "name": "ACCORDION TASK 03"
+  },
+  {
+    "id": "accordion-04",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": true,
+    "target": true,
+    "name": "ACCORDION TASK 04"
+  },
+  {
+    "id": "accordion-05",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": false,
+    "target": true,
+    "name": "ACCORDION TASK 05"
+  },
+  {
+    "id": "accordion-06",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": true,
+    "target": true,
+    "name": "ACCORDION TASK 06"
+  },
+  {
+    "id": "accordion-07",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": false,
+    "target": true,
+    "name": "ACCORDION TASK 07"
+  },
+  {
+    "id": "accordion-08",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": true,
+    "target": true,
+    "name": "ACCORDION TASK 08"
+  },
+  {
+    "id": "accordion-09",
+    "role": "button",
+    "kind": "accordion",
+    "property": "expanded",
+    "initial": false,
+    "target": true,
+    "name": "ACCORDION TASK 09"
+  },
+  {
+    "id": "checkbox-00",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "CHECKBOX TASK 00"
+  },
+  {
+    "id": "checkbox-01",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "CHECKBOX TASK 01"
+  },
+  {
+    "id": "checkbox-02",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "CHECKBOX TASK 02"
+  },
+  {
+    "id": "checkbox-03",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "CHECKBOX TASK 03"
+  },
+  {
+    "id": "checkbox-04",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "CHECKBOX TASK 04"
+  },
+  {
+    "id": "checkbox-05",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "CHECKBOX TASK 05"
+  },
+  {
+    "id": "checkbox-06",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "CHECKBOX TASK 06"
+  },
+  {
+    "id": "checkbox-07",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "CHECKBOX TASK 07"
+  },
+  {
+    "id": "checkbox-08",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "CHECKBOX TASK 08"
+  },
+  {
+    "id": "checkbox-09",
+    "role": "checkbox",
+    "kind": "checkbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "CHECKBOX TASK 09"
+  },
+  {
+    "id": "switch-00",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "SWITCH TASK 00"
+  },
+  {
+    "id": "switch-01",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "SWITCH TASK 01"
+  },
+  {
+    "id": "switch-02",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "SWITCH TASK 02"
+  },
+  {
+    "id": "switch-03",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "SWITCH TASK 03"
+  },
+  {
+    "id": "switch-04",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "SWITCH TASK 04"
+  },
+  {
+    "id": "switch-05",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "SWITCH TASK 05"
+  },
+  {
+    "id": "switch-06",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "SWITCH TASK 06"
+  },
+  {
+    "id": "switch-07",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "SWITCH TASK 07"
+  },
+  {
+    "id": "switch-08",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "SWITCH TASK 08"
+  },
+  {
+    "id": "switch-09",
+    "role": "switch",
+    "kind": "switch",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "SWITCH TASK 09"
+  },
+  {
+    "id": "menuitemcheckbox-00",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 00"
+  },
+  {
+    "id": "menuitemcheckbox-01",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 01"
+  },
+  {
+    "id": "menuitemcheckbox-02",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 02"
+  },
+  {
+    "id": "menuitemcheckbox-03",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 03"
+  },
+  {
+    "id": "menuitemcheckbox-04",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 04"
+  },
+  {
+    "id": "menuitemcheckbox-05",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 05"
+  },
+  {
+    "id": "menuitemcheckbox-06",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 06"
+  },
+  {
+    "id": "menuitemcheckbox-07",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 07"
+  },
+  {
+    "id": "menuitemcheckbox-08",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": true,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 08"
+  },
+  {
+    "id": "menuitemcheckbox-09",
+    "role": "menuitemcheckbox",
+    "kind": "menuitemcheckbox",
+    "property": "checked",
+    "initial": false,
+    "target": true,
+    "name": "MENUITEMCHECKBOX TASK 09"
+  }
+]

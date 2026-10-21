@@ -1,0 +1,1014 @@
+{
+  "label": "pre4129",
+  "binary": "bin/pre4129",
+  "binary_sha256": "ca0f81ef297935bf281e99d92849d5bdce3661563fa6e0cf6e954b24e41ff359",
+  "fixture_sha256": "3fa307564107ea8425b75f69efb95cdce134f36fa5a449760b2adb4c43147fd6",
+  "samples": 3,
+  "tasks": 40,
+  "median_known": 0,
+  "median_final_correct": 20,
+  "median_tree_ms": 99.135,
+  "median_tree_bytes": 1582,
+  "measurement": "Deterministic one-read tree-state policy. No LLM, real MCP click used if state known false; scorer reads DOM after decisions",
+  "raw_runs": [
+    {
+      "run": 1,
+      "known": 0,
+      "total": 40,
+      "clicks": 0,
+      "correct_final_state": 20,
+      "tree_ms": 135.189,
+      "tree_bytes": 1582,
+      "decisions": [
+        {
+          "id": "accordion-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        }
+      ],
+      "final_states": {
+        "accordion-00": "true",
+        "accordion-01": "false",
+        "accordion-02": "true",
+        "accordion-03": "false",
+        "accordion-04": "true",
+        "accordion-05": "false",
+        "accordion-06": "true",
+        "accordion-07": "false",
+        "accordion-08": "true",
+        "accordion-09": "false",
+        "checkbox-00": "true",
+        "checkbox-01": "false",
+        "checkbox-02": "true",
+        "checkbox-03": "false",
+        "checkbox-04": "true",
+        "checkbox-05": "false",
+        "checkbox-06": "true",
+        "checkbox-07": "false",
+        "checkbox-08": "true",
+        "checkbox-09": "false",
+        "switch-00": "true",
+        "switch-01": "false",
+        "switch-02": "true",
+        "switch-03": "false",
+        "switch-04": "true",
+        "switch-05": "false",
+        "switch-06": "true",
+        "switch-07": "false",
+        "switch-08": "true",
+        "switch-09": "false",
+        "menuitemcheckbox-00": "true",
+        "menuitemcheckbox-01": "false",
+        "menuitemcheckbox-02": "true",
+        "menuitemcheckbox-03": "false",
+        "menuitemcheckbox-04": "true",
+        "menuitemcheckbox-05": "false",
+        "menuitemcheckbox-06": "true",
+        "menuitemcheckbox-07": "false",
+        "menuitemcheckbox-08": "true",
+        "menuitemcheckbox-09": "false"
+      }
+    },
+    {
+      "run": 2,
+      "known": 0,
+      "total": 40,
+      "clicks": 0,
+      "correct_final_state": 20,
+      "tree_ms": 99.135,
+      "tree_bytes": 1582,
+      "decisions": [
+        {
+          "id": "accordion-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        }
+      ],
+      "final_states": {
+        "accordion-00": "true",
+        "accordion-01": "false",
+        "accordion-02": "true",
+        "accordion-03": "false",
+        "accordion-04": "true",
+        "accordion-05": "false",
+        "accordion-06": "true",
+        "accordion-07": "false",
+        "accordion-08": "true",
+        "accordion-09": "false",
+        "checkbox-00": "true",
+        "checkbox-01": "false",
+        "checkbox-02": "true",
+        "checkbox-03": "false",
+        "checkbox-04": "true",
+        "checkbox-05": "false",
+        "checkbox-06": "true",
+        "checkbox-07": "false",
+        "checkbox-08": "true",
+        "checkbox-09": "false",
+        "switch-00": "true",
+        "switch-01": "false",
+        "switch-02": "true",
+        "switch-03": "false",
+        "switch-04": "true",
+        "switch-05": "false",
+        "switch-06": "true",
+        "switch-07": "false",
+        "switch-08": "true",
+        "switch-09": "false",
+        "menuitemcheckbox-00": "true",
+        "menuitemcheckbox-01": "false",
+        "menuitemcheckbox-02": "true",
+        "menuitemcheckbox-03": "false",
+        "menuitemcheckbox-04": "true",
+        "menuitemcheckbox-05": "false",
+        "menuitemcheckbox-06": "true",
+        "menuitemcheckbox-07": "false",
+        "menuitemcheckbox-08": "true",
+        "menuitemcheckbox-09": "false"
+      }
+    },
+    {
+      "run": 3,
+      "known": 0,
+      "total": 40,
+      "clicks": 0,
+      "correct_final_state": 20,
+      "tree_ms": 97.59,
+      "tree_bytes": 1582,
+      "decisions": [
+        {
+          "id": "accordion-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "accordion-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "checkbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "switch-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-00",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-01",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-02",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-03",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-04",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-05",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-06",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-07",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-08",
+          "expected_initial": true,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        },
+        {
+          "id": "menuitemcheckbox-09",
+          "expected_initial": false,
+          "seen": null,
+          "status": "unknown",
+          "clicked": false
+        }
+      ],
+      "final_states": {
+        "accordion-00": "true",
+        "accordion-01": "false",
+        "accordion-02": "true",
+        "accordion-03": "false",
+        "accordion-04": "true",
+        "accordion-05": "false",
+        "accordion-06": "true",
+        "accordion-07": "false",
+        "accordion-08": "true",
+        "accordion-09": "false",
+        "checkbox-00": "true",
+        "checkbox-01": "false",
+        "checkbox-02": "true",
+        "checkbox-03": "false",
+        "checkbox-04": "true",
+        "checkbox-05": "false",
+        "checkbox-06": "true",
+        "checkbox-07": "false",
+        "checkbox-08": "true",
+        "checkbox-09": "false",
+        "switch-00": "true",
+        "switch-01": "false",
+        "switch-02": "true",
+        "switch-03": "false",
+        "switch-04": "true",
+        "switch-05": "false",
+        "switch-06": "true",
+        "switch-07": "false",
+        "switch-08": "true",
+        "switch-09": "false",
+        "menuitemcheckbox-00": "true",
+        "menuitemcheckbox-01": "false",
+        "menuitemcheckbox-02": "true",
+        "menuitemcheckbox-03": "false",
+        "menuitemcheckbox-04": "true",
+        "menuitemcheckbox-05": "false",
+        "menuitemcheckbox-06": "true",
+        "menuitemcheckbox-07": "false",
+        "menuitemcheckbox-08": "true",
+        "menuitemcheckbox-09": "false"
+      }
+    }
+  ]
+}

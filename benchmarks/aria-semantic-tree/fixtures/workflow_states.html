@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><title>ARIA toggle decisions</title></head><body>
+<script>
+function toggle(el) {
+  const attr = el.hasAttribute('aria-expanded') ? 'aria-expanded' : 'aria-checked';
+  const value = el.getAttribute(attr);
+  el.setAttribute(attr, String(value.toLowerCase() !== 'true'));
+}
+</script>
+<button id="accordion-00" role="button" aria-expanded="TRUE" tabindex="0" aria-label="ACCORDION TASK 00" onclick="toggle(this)">ACCORDION TASK 00</button>
+<button id="accordion-01" role="button" aria-expanded="false" tabindex="0" aria-label="ACCORDION TASK 01" onclick="toggle(this)">ACCORDION TASK 01</button>
+<button id="accordion-02" role="button" aria-expanded="true" tabindex="0" aria-label="ACCORDION TASK 02" onclick="toggle(this)">ACCORDION TASK 02</button>
+<button id="accordion-03" role="button" aria-expanded="false" tabindex="0" aria-label="ACCORDION TASK 03" onclick="toggle(this)">ACCORDION TASK 03</button>
+<button id="accordion-04" role="button" aria-expanded="TRUE" tabindex="0" aria-label="ACCORDION TASK 04" onclick="toggle(this)">ACCORDION TASK 04</button>
+<button id="accordion-05" role="button" aria-expanded="false" tabindex="0" aria-label="ACCORDION TASK 05" onclick="toggle(this)">ACCORDION TASK 05</button>
+<button id="accordion-06" role="button" aria-expanded="true" tabindex="0" aria-label="ACCORDION TASK 06" onclick="toggle(this)">ACCORDION TASK 06</button>
+<button id="accordion-07" role="button" aria-expanded="false" tabindex="0" aria-label="ACCORDION TASK 07" onclick="toggle(this)">ACCORDION TASK 07</button>
+<button id="accordion-08" role="button" aria-expanded="TRUE" tabindex="0" aria-label="ACCORDION TASK 08" onclick="toggle(this)">ACCORDION TASK 08</button>
+<button id="accordion-09" role="button" aria-expanded="false" tabindex="0" aria-label="ACCORDION TASK 09" onclick="toggle(this)">ACCORDION TASK 09</button>
+<div id="checkbox-00" role="checkbox" aria-checked="TRUE" tabindex="0" aria-label="CHECKBOX TASK 00" onclick="toggle(this)">CHECKBOX TASK 00</div>
+<div id="checkbox-01" role="checkbox" aria-checked="false" tabindex="0" aria-label="CHECKBOX TASK 01" onclick="toggle(this)">CHECKBOX TASK 01</div>
+<div id="checkbox-02" role="checkbox" aria-checked="true" tabindex="0" aria-label="CHECKBOX TASK 02" onclick="toggle(this)">CHECKBOX TASK 02</div>
+<div id="checkbox-03" role="checkbox" aria-checked="false" tabindex="0" aria-label="CHECKBOX TASK 03" onclick="toggle(this)">CHECKBOX TASK 03</div>
+<div id="checkbox-04" role="checkbox" aria-checked="TRUE" tabindex="0" aria-label="CHECKBOX TASK 04" onclick="toggle(this)">CHECKBOX TASK 04</div>
+<div id="checkbox-05" role="checkbox" aria-checked="false" tabindex="0" aria-label="CHECKBOX TASK 05" onclick="toggle(this)">CHECKBOX TASK 05</div>
+<div id="checkbox-06" role="checkbox" aria-checked="true" tabindex="0" aria-label="CHECKBOX TASK 06" onclick="toggle(this)">CHECKBOX TASK 06</div>
+<div id="checkbox-07" role="checkbox" aria-checked="false" tabindex="0" aria-label="CHECKBOX TASK 07" onclick="toggle(this)">CHECKBOX TASK 07</div>
+<div id="checkbox-08" role="checkbox" aria-checked="TRUE" tabindex="0" aria-label="CHECKBOX TASK 08" onclick="toggle(this)">CHECKBOX TASK 08</div>
+<div id="checkbox-09" role="checkbox" aria-checked="false" tabindex="0" aria-label="CHECKBOX TASK 09" onclick="toggle(this)">CHECKBOX TASK 09</div>
+<div id="switch-00" role="switch" aria-checked="TRUE" tabindex="0" aria-label="SWITCH TASK 00" onclick="toggle(this)">SWITCH TASK 00</div>
+<div id="switch-01" role="switch" aria-checked="false" tabindex="0" aria-label="SWITCH TASK 01" onclick="toggle(this)">SWITCH TASK 01</div>
+<div id="switch-02" role="switch" aria-checked="true" tabindex="0" aria-label="SWITCH TASK 02" onclick="toggle(this)">SWITCH TASK 02</div>
+<div id="switch-03" role="switch" aria-checked="false" tabindex="0" aria-label="SWITCH TASK 03" onclick="toggle(this)">SWITCH TASK 03</div>
+<div id="switch-04" role="switch" aria-checked="TRUE" tabindex="0" aria-label="SWITCH TASK 04" onclick="toggle(this)">SWITCH TASK 04</div>
+<div id="switch-05" role="switch" aria-checked="false" tabindex="0" aria-label="SWITCH TASK 05" onclick="toggle(this)">SWITCH TASK 05</div>
+<div id="switch-06" role="switch" aria-checked="true" tabindex="0" aria-label="SWITCH TASK 06" onclick="toggle(this)">SWITCH TASK 06</div>
+<div id="switch-07" role="switch" aria-checked="false" tabindex="0" aria-label="SWITCH TASK 07" onclick="toggle(this)">SWITCH TASK 07</div>
+<div id="switch-08" role="switch" aria-checked="TRUE" tabindex="0" aria-label="SWITCH TASK 08" onclick="toggle(this)">SWITCH TASK 08</div>
+<div id="switch-09" role="switch" aria-checked="false" tabindex="0" aria-label="SWITCH TASK 09" onclick="toggle(this)">SWITCH TASK 09</div>
+<div id="menuitemcheckbox-00" role="menuitemcheckbox" aria-checked="TRUE" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 00" onclick="toggle(this)">MENUITEMCHECKBOX TASK 00</div>
+<div id="menuitemcheckbox-01" role="menuitemcheckbox" aria-checked="false" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 01" onclick="toggle(this)">MENUITEMCHECKBOX TASK 01</div>
+<div id="menuitemcheckbox-02" role="menuitemcheckbox" aria-checked="true" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 02" onclick="toggle(this)">MENUITEMCHECKBOX TASK 02</div>
+<div id="menuitemcheckbox-03" role="menuitemcheckbox" aria-checked="false" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 03" onclick="toggle(this)">MENUITEMCHECKBOX TASK 03</div>
+<div id="menuitemcheckbox-04" role="menuitemcheckbox" aria-checked="TRUE" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 04" onclick="toggle(this)">MENUITEMCHECKBOX TASK 04</div>
+<div id="menuitemcheckbox-05" role="menuitemcheckbox" aria-checked="false" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 05" onclick="toggle(this)">MENUITEMCHECKBOX TASK 05</div>
+<div id="menuitemcheckbox-06" role="menuitemcheckbox" aria-checked="true" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 06" onclick="toggle(this)">MENUITEMCHECKBOX TASK 06</div>
+<div id="menuitemcheckbox-07" role="menuitemcheckbox" aria-checked="false" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 07" onclick="toggle(this)">MENUITEMCHECKBOX TASK 07</div>
+<div id="menuitemcheckbox-08" role="menuitemcheckbox" aria-checked="TRUE" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 08" onclick="toggle(this)">MENUITEMCHECKBOX TASK 08</div>
+<div id="menuitemcheckbox-09" role="menuitemcheckbox" aria-checked="false" tabindex="0" aria-label="MENUITEMCHECKBOX TASK 09" onclick="toggle(this)">MENUITEMCHECKBOX TASK 09</div>
+</body></html>

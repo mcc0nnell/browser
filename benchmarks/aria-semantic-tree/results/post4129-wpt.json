@@ -1,0 +1,51 @@
+{
+  "label": "post4129",
+  "source_url": "https://github.com/web-platform-tests/wpt/blob/b4b303c8dca22989c43e2d76fce199c36d4b77a7/wai-aria/checked/checked.tentative.html",
+  "source_sha256": "ccb8b47e2e8ce79cf3713b61338a12f9f5e95c1c0318ae896f98713e517bef13",
+  "binary_sha256": "9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c",
+  "result_kind": "WPT-sourced case projection onto Lightpanda MCP tree, not an official WPT run",
+  "correct": 4,
+  "total": 4,
+  "cases": [
+    {
+      "name": "checkbox with missing aria-checked",
+      "expected": "false",
+      "raw_checked": null,
+      "observed": [
+        "unchecked"
+      ],
+      "passed_projection": true,
+      "matched_nodes": 1
+    },
+    {
+      "name": "checkbox with aria-checked true",
+      "expected": "true",
+      "raw_checked": "true",
+      "observed": [
+        "checked"
+      ],
+      "passed_projection": true,
+      "matched_nodes": 1
+    },
+    {
+      "name": "checkbox with aria-checked false",
+      "expected": "false",
+      "raw_checked": "false",
+      "observed": [
+        "unchecked"
+      ],
+      "passed_projection": true,
+      "matched_nodes": 1
+    },
+    {
+      "name": "checkbox with aria-checked mixed",
+      "expected": "mixed",
+      "raw_checked": "mixed",
+      "observed": [
+        "mixed"
+      ],
+      "passed_projection": true,
+      "matched_nodes": 1
+    }
+  ]
+}

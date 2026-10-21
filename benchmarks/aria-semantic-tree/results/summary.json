@@ -1,0 +1,62 @@
+{
+  "method": "Synthetic local MCP state visibility and deterministic one-read toggle decisions; not LLM accuracy",
+  "runs": [
+    {
+      "stage": "Oct 18 older build",
+      "commit": "0bef9e72",
+      "version": "1.1.0-dev.10748+0bef9e72",
+      "sha256": "ca0f81ef297935bf281e99d92849d5bdce3661563fa6e0cf6e954b24e41ff359",
+      "regression_visible": 0,
+      "regression_total": 19,
+      "regression_wrong": 0,
+      "regression_unknown": 19,
+      "negative_controls_clear": 3,
+      "regression_tree_bytes": 920,
+      "regression_median_ms": 7.393,
+      "workflow_known": 0,
+      "workflow_total": 40,
+      "workflow_final_correct": 20,
+      "workflow_clicks": 0,
+      "workflow_tree_bytes": 1582,
+      "workflow_median_ms": 99.135
+    },
+    {
+      "stage": "Merged #4036",
+      "commit": "463360ad",
+      "version": "1.1.0-dev.10918+463360ad",
+      "sha256": "3a50a6024af6c4b6a1b1c5b55c734047adaf2adf3f8fd83a8d3b3369540eadf2",
+      "regression_visible": 0,
+      "regression_total": 19,
+      "regression_wrong": 0,
+      "regression_unknown": 19,
+      "negative_controls_clear": 3,
+      "regression_tree_bytes": 920,
+      "regression_median_ms": 10.016,
+      "workflow_known": 0,
+      "workflow_total": 40,
+      "workflow_final_correct": 20,
+      "workflow_clicks": 0,
+      "workflow_tree_bytes": 1582,
+      "workflow_median_ms": 119.329
+    },
+    {
+      "stage": "PR #4129 head",
+      "commit": "725ff748",
+      "version": "1.1.0-dev.10925+725ff748",
+      "sha256": "9d36bc68267c8a370a58da771204a85eac9c231f9a77852625af7feab033bf1c",
+      "regression_visible": 19,
+      "regression_total": 19,
+      "regression_wrong": 0,
+      "regression_unknown": 0,
+      "negative_controls_clear": 3,
+      "regression_tree_bytes": 1143,
+      "regression_median_ms": 7.75,
+      "workflow_known": 40,
+      "workflow_total": 40,
+      "workflow_final_correct": 40,
+      "workflow_clicks": 20,
+      "workflow_tree_bytes": 2027,
+      "workflow_median_ms": 100.069
+    }
+  ]
+}
