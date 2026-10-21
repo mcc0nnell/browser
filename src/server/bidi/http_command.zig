@@ -28,6 +28,8 @@ const Frame = @import("../../browser/Frame.zig");
 const Node = @import("../../browser/webapi/Node.zig");
 const Viewport = @import("../../browser/Viewport.zig");
 const NodeRegistry = @import("../../NodeRegistry.zig");
+const Label = @import("../../browser/webapi/element/html/Label.zig");
+const AXNode = @import("../cdp/AXNode.zig");
 
 const Method = @import("../http.zig").Connection.Method;
 
@@ -74,6 +76,7 @@ pub const Command = union(enum) {
     get_element_attribute: ElementName,
     get_element_property: ElementName,
     get_element_css_value: ElementName,
+    get_element_accessibility: ElementId,
     get_element_rect: ElementId,
     is_element_enabled: ElementId,
     is_element_selected: ElementId,
@@ -255,6 +258,7 @@ const routes = [_]Route{
     .init(.GET, "/element/{id}/text", .get_element_text),
     .init(.GET, "/element/{id}/name", .get_element_tag_name),
     .init(.GET, "/element/{id}/rect", .get_element_rect),
+    .init(.GET, "/element/{id}/accessibility", .get_element_accessibility),
     .init(.GET, "/element/{id}/enabled", .is_element_enabled),
     .init(.GET, "/element/{id}/selected", .is_element_selected),
     .init(.POST, "/element/{id}/click", .element_click),
@@ -362,6 +366,7 @@ pub fn process(cmd: *BiDi.Command) !void {
         .get_element_attribute => |p| return getElementAttribute(cmd, p),
         .get_element_property => |p| return getElementProperty(cmd, p),
         .get_element_css_value => |p| return getElementCssValue(cmd, p),
+        .get_element_accessibility => |p| return getElementAccessibility(cmd, p),
         .get_element_rect => |p| return getElementRect(cmd, p),
         .is_element_enabled => |p| return isElementEnabled(cmd, p),
         .is_element_selected => |p| return isElementSelected(cmd, p),
@@ -678,6 +683,29 @@ fn isElementSelected(cmd: *BiDi.Command, p: ElementId) !void {
         return cmd.sendResult(option.getSelected());
     }
     return cmd.sendResult(false);
+}
+
+// A Lightpanda-specific testdriver bridge: return the *computed* CDP AX
+// representation for a WebDriver element in this same session. This is not a
+// W3C WebDriver standard endpoint, nor an OS-platform accessibility mapping.
+fn getElementAccessibility(cmd: *BiDi.Command, p: ElementId) !void {
+    const frame = (try currentFrame(cmd)) orelse return;
+    const element = (try requireElement(cmd, p.id, frame)) orelse return;
+    const root = try cmd.bidi.node_registry.register(element.asNode());
+    const arena = try frame.getArena(.medium, "WebDriverAccessibility");
+    defer arena.release();
+
+    const labels = try frame.call_arena.create(Label.LabelByForIndex);
+    labels.* = .{};
+    const writer: AXNode.Writer = .{
+        .root = root,
+        .registry = &cmd.bidi.node_registry,
+        .frame = frame,
+        .label_index = labels,
+        .temp_arena = arena,
+        .depth = 1,
+    };
+    return cmd.sendResult(.{ .nodes = writer });
 }
 
 // POST /session/{id}/element/{id}/click.
@@ -1141,6 +1169,7 @@ test "bidi.http_command: parse" {
     // a literal segment wins over the parameter that would also match it
     try testing.expect(try parse(arena, .GET, "/element/active", "") == .get_active_element);
     try testing.expect(try parse(arena, .GET, "/element/7/text", "") == .get_element_text);
+    try testing.expectEqual("7", (try parse(arena, .GET, "/element/7/accessibility", "")).get_element_accessibility.id);
 
     try testing.expect(try parse(arena, .GET, "/url", "") == .get_current_url);
     try testing.expect(try parse(arena, .POST, "/back", "{}") == .back);
